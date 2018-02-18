@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.jaysyurahman_1202154199_modul2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Rumah Makan Sederhana"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".TakeAway"
+            android:label="Take Away Detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DineIn"
+            android:label="Dine In Detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DaftarMenu"
+            android:label="Daftar Menu" />
+        <activity
+            android:name=".DetailMenu"
+            android:label="Menu"
+            android:parentActivityName=".DaftarMenu" />
+        <activity android:name=".ListAdapter"></activity>
+    </application>
+
+</manifest>
